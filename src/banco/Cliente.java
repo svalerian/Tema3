@@ -3,10 +3,10 @@ package banco;
 public class Cliente {
 
     private String nombre;
-    private long dni;
+    private String dni;
     private long telefono;
 
-    public Cliente(String nombre, long dni, long telefono){
+    public Cliente(String nombre, String dni, long telefono){
         this.nombre = nombre;
         this.dni = dni;
         this.telefono = telefono;
@@ -26,11 +26,11 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public long getDni() {
+    public String getDni() {
         return dni;
     }
 
-    public void setDni(long dni) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
@@ -45,8 +45,15 @@ public class Cliente {
     //Mostrar datos
 
     public void mostrarDatos(){
-        System.out.print(nombre);
-        System.out.print(dni);
-        System.out.print(telefono);
+        System.out.println(nombre);
+        System.out.println(dni);
+        System.out.println(telefono);
+    }
+
+    //Metodo extra
+    public void actulizarCliente(Cliente cliente, String nombre, String dni, long telefono){
+        cliente.setNombre(nombre);
+        cliente.setDni(dni);
+        cliente.setTelefono(telefono);
     }
 }

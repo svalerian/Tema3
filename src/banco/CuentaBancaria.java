@@ -14,27 +14,27 @@ public class CuentaBancaria {
 
     public void retirar(long importe, CuentaBancaria cb){
         long saldo_nuevo;
-        if(cb.getSaldo() <= importe){
+        if(cb.getSaldo() >= importe){
             saldo_nuevo = cb.getSaldo() - importe;
             cb.setSaldo(saldo_nuevo);
+            System.out.println("Su saldo actual despues de la retirada es de: " + cb.getSaldo());
         }
-        else{
+        else {
             System.out.println("No tiene suficiente dinero para retirar ese importe");
             System.out.println("Usted tiene tanto dinero: " + cb.getSaldo());
         }
-        System.out.println("Su saldo actual despues de la retirada es de: " + cb.getSaldo());
     }
 
     public void ingresar(long importe, CuentaBancaria cb){
         long saldo_nuevo = cb.getSaldo() + importe;
         cb.setSaldo(saldo_nuevo);
         System.out.println("Has ingresado la suma de: " + importe);
-        System.out.println("Usted tiene tanto dinero: "+ cb.getSaldo());
+        System.out.println("Tras lo ingresado usted tiene: "+ cb.getSaldo());
     }
 
     public void datosCuenta(CuentaBancaria cb){
         System.out.println("Numero de cuenta: " + cb.getNumero());
-        System.out.println("Titular de la cuenta: " + cb.getTitular().getNombre());
+        System.out.println("Titular de la cuenta: " + cb.getTitular());
         System.out.println("Saldo restante: " + cb.getSaldo());
     }
 
@@ -60,5 +60,12 @@ public class CuentaBancaria {
 
     public void setSaldo(long saldo) {
         this.saldo = saldo;
+    }
+
+    //Metodo extra
+    public void actualizarCuenta(CuentaBancaria cb, long numero, Cliente cliente, long saldo){
+        cb.setNumero(numero);
+        cb.setTitular(cliente);
+        cb.setSaldo(saldo);
     }
 }
