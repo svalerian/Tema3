@@ -7,7 +7,7 @@ public class CuentaBancaria {
     private long saldo;
 
     public CuentaBancaria(Cliente titular, long saldo, long numero) {
-        titular = new Cliente(titular);
+        this.titular = new Cliente(titular);
         this.saldo = saldo;
         this.numero = numero;
     }
@@ -34,7 +34,7 @@ public class CuentaBancaria {
 
     public void datosCuenta(CuentaBancaria cb){
         System.out.println("Numero de cuenta: " + cb.getNumero());
-        System.out.println("Titular de la cuenta: " + cb.getTitular());
+        System.out.println("Titular de la cuenta: " + cb.getTitular().getNombre());
         System.out.println("Saldo restante: " + cb.getSaldo());
     }
 
