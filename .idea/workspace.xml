@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e27cb01-7b4f-4bf4-913c-d2f385ba1cc1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/banco/CuentaBancaria.java" afterPath="$PROJECT_DIR$/src/banco/CuentaBancaria.java" />
-    </list>
+    <list default="true" id="4e27cb01-7b4f-4bf4-913c-d2f385ba1cc1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -314,21 +312,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/banco/Banco.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/banco/Banco.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
