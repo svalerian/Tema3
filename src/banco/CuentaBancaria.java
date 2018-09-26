@@ -1,5 +1,7 @@
 package banco;
-
+/*@author
+    Sergio Valerian
+ */
 public class CuentaBancaria {
 
     private long numero;

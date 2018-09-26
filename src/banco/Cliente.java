@@ -1,5 +1,7 @@
 package banco;
-
+/*@author
+    Sergio Valerian
+ */
 public class Cliente {
 
     private String nombre;

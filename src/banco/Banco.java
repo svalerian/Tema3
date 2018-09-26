@@ -1,5 +1,7 @@
 package banco;
-
+/*@author
+    Sergio Valerian
+ */
 public class Banco {
     public static void main(String[] args){
         Cliente c1 = new Cliente("Graciela Alvarez", "5738591-J", 284930138);
